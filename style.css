@@ -1,0 +1,250 @@
+@font-face {
+    font-family: sevate;
+    src: url(Fonts/static/);
+}
+
+body {
+    color: #e0f7f4;
+    background: #081421;
+    font-family: sevate;
+}
+
+.folio:hover {
+    color: #00ffab;
+    font-weight: bold;
+}
+
+.bgclr {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0px;
+    background: #081421;
+    box-shadow: 3px 3px 20px #00ffab;
+    z-index: 1;
+    color: #e0f7f4;
+}
+
+.navbar-toggler {
+    color: #081421;
+    background: #00ffab;
+}
+
+.bgcl {
+    background: #081421;
+}
+
+.lnks a {
+    color: #e0f7f4;
+    font-size: 20px;
+    font-weight: bold;
+    animation: fadeUp 2s ease forwards;
+}
+
+.lnks li a:hover {
+    color: #14ffe9;
+    text-decoration: underline;
+    letter-spacing: 2px;
+}
+
+/* About Me Text Animation */
+.about-text h1, .about-text h5, .about-text p {
+    opacity: 0;
+    animation: fadeUpGlow 2s ease forwards;
+}
+
+.about-text h1 {
+    animation-delay: 0s;
+    font-size: 50px;
+    color: #00ffab;
+}
+
+.about-text h5 {
+    animation-delay: 0.5s;
+    font-size: 25px;
+    color: #14ffe9;
+}
+
+.about-text p {
+    animation-delay: 1s;
+    font-size: 18px;
+    color: #e0f7f4;
+}
+
+@keyframes fadeUpGlow {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+        text-shadow: 0 0 0px #00ffab;
+    }
+    50% {
+        opacity: 0.6;
+        transform: translateY(10px);
+        text-shadow: 0 0 8px #00ffab;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+        text-shadow: 0 0 15px #00ffab, 0 0 20px #14ffe9;
+    }
+}
+
+/* Floating image animation for About Me */
+.imag img, .imagg img {
+    border: 5px solid rgba(0, 255, 171, 0.8);
+    box-shadow: 0 0 25px #00ffab,
+                0 0 25px #14ffe9,
+                0 0 50px #00ffab,
+                0 0 100px #14ffe9;
+    border-radius: 50%; /* Make circular */
+    width: 320px; /* slightly larger */
+    height: 320px;
+    animation: floatZoom 3s infinite alternate ease-in-out;
+}
+
+@keyframes floatZoom {
+    0% { transform: translateY(0px) scale(1); }
+    50% { transform: translateY(-15px) scale(1.05); }
+    100% { transform: translateY(0px) scale(1); }
+}
+
+/* Social icons */
+.social a {
+    font-size: 30px;
+    background: transparent;
+    border: 2px solid #00ffab;
+    border-radius: 50%;
+    color: #00ffab;
+    width: 50px;
+    display: flex;
+    height: 50px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 15px #00ffab;
+    animation: fadeUp 3s ease forwards;
+}
+
+.social a:hover {
+    background: #00ffab;
+    color: #081421;
+    border: 2px solid #081421;
+}
+
+/* Buttons */
+.btN {
+    background: linear-gradient(135deg, #00ffab, #14ffe9);
+    color: #081421;
+    border-radius: 30px;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0, 255, 171, 0.5),
+                0 0 10px rgba(20, 255, 233, 0.5);
+    animation: slidebtn 3s ease forwards;
+}
+
+.btN:hover {
+    background: linear-gradient(135deg, #14ffe9, #00ffab);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 255, 171, 0.5);
+}
+
+@keyframes slidebtn {
+    0% { transform: translateY(-100px); opacity: 0; }
+    100% { transform: translateY(0px); opacity: 1; }
+}
+
+.txt {
+    color: #00ffab;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.brd {
+    border: none;
+    background: none;
+}
+
+.icon, .iconn {
+    background: none;
+    color: #e0f7f4;
+    box-shadow: 0 0 20px #00ffab, 0 0 10px #14ffe9;
+    border-radius: 20px;
+    border: 3px solid #00ffab;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.iconn i {
+    font-size: 50px;
+    color: #00ffab;
+    padding: 20px 0;
+}
+
+.para {
+    font-size: 15px;
+}
+
+span {
+    color: #00ffab;
+}
+
+.imgg img {
+    height: 250px;
+    border-radius: 15px;
+    filter: brightness(20%);
+    transition: 2s;
+    border: 2px solid black;
+}
+
+.imgg img:hover {
+    filter: brightness(100%);
+    height: 300px;
+    box-shadow: 0 0 40px #00ffab, 0 0 30px #14ffe9;
+    cursor: grab;
+}
+
+.line {
+    text-shadow: 0 0 80px rgba(224, 247, 244, 0.9),
+                 0 0 50px #14ffe9;
+}
+
+.icon a {
+    color: #00ffab;
+}
+
+.headingtxt h1 {
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+    animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp {
+    0% { transform: translateY(20px); opacity: 0; }
+    100% { transform: translateY(0px); opacity: 1; }
+}
+
+/* Big square contact card */
+.square-big {
+  width: 100%;          /* Full width of container */
+  max-width: 1200px;    /* <-- WIDTH CONTROL (increase/decrease here) */
+  height: 550px;        /* <-- HEIGHT CONTROL (increase/decrease here) */
+  margin: 0 auto;       /* Center the big box */
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0px 4px 20px rgba(0,0,0,0.1); /* soft shadow */
+}
+
+/* Make form content fit inside */
+.square-big form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.square-big textarea {
+  resize: none;
+}
